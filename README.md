@@ -1,5 +1,5 @@
 # Ex09 Event Registration Web Application
-## Date:09/10/2025
+## Date: 16-10-2025
 
 ## AIM:
 To design, develop and deploy a web application for event registration.
@@ -33,52 +33,194 @@ Publish the website in the given URL.
 Figma
 
 ## CODE:
-```
-Home Page
-<div class="Screenshot-2025-10-05-151026"></div>
-<div class="aurora-night-1"></div>
-<span class="NEXT-PAGE">
-  NEXT PAGE
-</span>
-<div class="images-1"></div>
-<div class="HD-wallpaper-blue-background-gradient"></div>
-.HD-wallpaper-blue-background-gradient {
-  width: 393px;
-  height: 852px;
-  transform: rotate(-180deg);
-}
-.Screenshot-2025-10-05-151026 {
-  width: 393px;
-  height: 624px;
-  padding: 0 0 89px;
-}
-.aurora-night-1 {
-  width: 341px;
-  height: 341px;
-  margin: 35px 26px;
-}.NEXT-PAGE {
-  width: 196px;
-  height: 34px;
-  margin: 35px 53px 5px 144px;
-  font-family: JainiPurva;
-  font-size: 32px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fff;
-}.images-1 {
-  width: 393px;
-  height: 228px;
-  margin: 624px 0 0;
-  mix-blend-mode: darken;
-}
+```html
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      background: url('splash-screen.jpg') no-repeat center center/cover;
+      font-family: sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .content {
+      background-color: rgba(0,0,0,0.5);
+      padding: 30px;
+      border-radius: 10px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: crimson;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Welcome to the Experience</h1>
+    <a href="ironman.html">Start →</a>
+  </div>
+</body>
+</html>
+
+
+ironman.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Here</title>
+  <style>
+    body {
+      margin: 0;
+      background: url('ironman-background.jpg') no-repeat center center/cover;
+      font-family: sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .form-container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input {
+      margin: 10px 0;
+      padding: 10px;
+      width: 200px;
+      border: none;
+      border-radius: 5px;
+    }
+    button, a {
+      padding: 10px 20px;
+      background-color: crimson;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>REGISTER HERE</h2>
+    <p>IF U WANNA SET ASHES ON FIRE</p>
+    <input type="text" placeholder="Name"><br>
+    <input type="text" placeholder="Reg No"><br>
+    <a href="mcqueen.html">ENTER →</a>
+  </div>
+</body>
+</html>
+
+mcqueeen.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bring Sally Up</title>
+  <style>
+    body {
+      margin: 0;
+      background: url('lightning-mcqueen.jpg') no-repeat center center/cover;
+      font-family: sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 2em;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>BRING SALLY UP</h1>
+  <p>UP</p>
+</body>
+</html>
+
+tatakae.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TATAKAE</title>
+  <style>
+    body {
+      margin: 0;
+      background: url('tatakae-city.jpg') no-repeat center center/cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 0;
+      text-shadow: 2px 2px 10px #000;
+    }
+    .footer {
+      font-size: 1em;
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>TATAKAE</h1>
+  <div class="footer">Android Small • Slide 4</div>
+</body>
+</html>
 ```
 
+
+
+
 ## OUTPUT:
-![alt text](<WhatsApp Image 2025-10-05 at 16.11.12_289c791b.jpg>)
+![alt text](<Screenshot 2025-10-10 104736.png>)
+![alt text](<Screenshot 2025-10-10 104755.png>)
+![alt text](<Screenshot 2025-10-10 104818.png>)
+
+![alt text](<Screenshot 2025-10-10 104833.png>)
+
 
 ## RESULT:
 The program to design, develop and deploy a web application for event registration is completed successfully.
